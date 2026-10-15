@@ -68,7 +68,7 @@
         cx.globalAlpha = cl((s - .4) * 3); cx.fillStyle = PA; cx.font = '900 ' + Math.round(Math.min(M * .09, W * .08)) + 'px Unbounded, sans-serif';
         cx.fillText('DE KLUSPLOEG', W / 2, Ht / 2 + M * .14);
         cx.font = 'italic 400 ' + Math.round(M * .05) + 'px "Instrument Serif", serif'; cx.fillStyle = OR;
-        cx.globalAlpha = cl((s - .8) * 3); cx.fillText('zes vrienden, elk vak', W / 2, Ht / 2 + M * .24); cx.globalAlpha = 1;
+        cx.globalAlpha = cl((s - .8) * 3); cx.fillText('vriendengroepen, elk vak', W / 2, Ht / 2 + M * .24); cx.globalAlpha = 1;
       } else { finish(); return; }
       requestAnimationFrame(frame);
     }
@@ -168,7 +168,7 @@
         $$('.m-opts button', m).forEach(function (x) { x.classList.toggle('on', x === b); });
         var v = V.filter(function (x) { return x.s === b.dataset.v; })[0];
         who.style.opacity = 0;
-        setTimeout(function () { who.textContent = v.w + ' komt langs'; who.style.opacity = 1; }, 180);
+        setTimeout(function () { who.textContent = v.w + ' pakken het op'; who.style.opacity = 1; }, 180);
         m.style.setProperty('--mc', v.c); pr.textContent = v.n + ' · ' + v.p; go.href = '/offerte/?vak=' + v.s;
       });
     });
