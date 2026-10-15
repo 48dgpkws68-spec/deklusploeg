@@ -182,3 +182,4 @@ p+p{margin-top:16px}
 .dd-menu{display:none}.row .btn{flex:1 1 100%;justify-content:center}.form-card{padding:20px}.stat{padding:24px 18px}.float-card{display:none}.vcard{min-height:250px}.phero{padding-top:130px}}
 @media (prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.ln>span{transform:none}}
 .rotline{margin-top:26px;color:var(--mut);display:flex;gap:10px;align-items:center;flex-wrap:wrap}.rotline .rot{height:1.4em;font-size:1rem;color:var(--yl)}.rotline .rot b{font-weight:500}
+.dd-menu{grid-template-columns:repeat(3,1fr);width:640px}

@@ -176,6 +176,6 @@
 
   // ---------- offerteformulier: vak uit url voorselecteren ----------
   var q = new URLSearchParams(location.search).get('vak');
-  if (q) $$('.chip input').forEach(function (i) { var map = { schilder: 'Schilderwerk', elektricien: 'Elektra', bouw: 'Bouw en verbouw', gevelreiniging: 'Gevelreiniging', loodgieter: 'Loodgieterswerk', vochtwering: 'Vochtwering', klusservice: 'Allround klussen' }; if (i.value === map[q]) i.checked = true; });
+  if (q) $$('.chip input').forEach(function (i) { var map = {}; $$('.chip input').forEach(function (x) { map[x.dataset.s] = x.value; }); if (i.value === map[q]) i.checked = true; });
   $$('.file input').forEach(function (f) { f.addEventListener('change', function () { $('span', f.parentElement).firstChild.textContent = '📷 ' + f.files.length + ' foto(s) gekozen '; }); });
 })();
