@@ -215,3 +215,18 @@ body{padding-bottom:76px}}
 @media (max-width:640px){.phero-in{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:640px){.btn{white-space:normal;text-align:center}}
 @media (max-width:360px){.mbar a{font-size:.74rem;padding:11px 4px}.mbar-main{white-space:nowrap}}
+/* verdieping zoekgat (seo-gap 24 nov 2026) */
+.answer{max-width:70ch;color:var(--paper)}
+.h-s{font:700 clamp(1.15rem,1.8vw,1.4rem)/1.2 var(--disp);letter-spacing:-.02em;margin:44px 0 16px}
+.prose-p{color:#D8D3C8;max-width:70ch}
+.vtab-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:18px}
+.vtab{width:100%;border-collapse:collapse;font-size:.95rem;min-width:620px}
+.vtab th{text-align:left;font:500 .72rem var(--mono);text-transform:uppercase;letter-spacing:.08em;color:var(--mut);padding:14px 16px;border-bottom:1px solid var(--line);background:var(--ink2)}
+.vtab td{padding:16px;border-bottom:1px solid var(--line);vertical-align:top;color:#D8D3C8}
+.vtab tr:last-child td{border-bottom:0}
+.vtab td:first-child{color:var(--paper);font-weight:500}
+.vsteps{list-style:none;counter-reset:vs;display:grid;gap:12px}
+.vsteps li{counter-increment:vs;display:grid;grid-template-columns:44px 1fr;column-gap:14px;padding:18px;border:1px solid var(--line);border-radius:18px;background:var(--ink2)}
+.vsteps li::before{content:"0" counter(vs);grid-row:span 2;font:500 .9rem var(--mono);color:var(--c,var(--or))}
+.vsteps b{font:600 1.05rem var(--disp);letter-spacing:-.02em}
+.vsteps span{color:var(--mut);margin-top:6px}
